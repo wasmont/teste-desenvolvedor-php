@@ -26,7 +26,7 @@ return new class extends Migration
             $table->string('url_linkedin'); 
             $table->text('qualificacoes'); 
             $table->integer('usuario_id'); 
-            $table->integer('curriculo_id'); 
+            $table->integer('arquivo_id'); 
             $table->decimal('pretensao', $precision = 10, $scale = 2); 
             $table->text('observacoes'); 
             $table->timestamps();
