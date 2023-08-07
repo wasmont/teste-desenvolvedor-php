@@ -20,6 +20,9 @@ Route::post('register-user', [Autenticacao::class, 'registerUser']);
 Route::post('login', [Autenticacao::class, 'login'])->middleware('auth:sanctum');
 Route::post('logout', [Autenticacao::class, 'logout'])->middleware('auth:sanctum');
 
+Route::group(['middleware'=>'auth:sanctum'], function(){
+    //Route::post('teste', [TesteController::class, 'index']);
+});
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
