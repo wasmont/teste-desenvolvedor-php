@@ -18,7 +18,8 @@ return new class extends Migration
             $table->string('telefone'); 
             $table->string('celular'); 
             $table->string('endereco'); 
-            $table->string('numero_local'); 
+            $table->string('numero'); 
+            $table->string('complemento'); 
             $table->string('cidade'); 
             $table->string('estado'); 
             $table->string('cep'); 

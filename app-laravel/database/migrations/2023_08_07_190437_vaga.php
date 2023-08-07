@@ -20,7 +20,8 @@ return new class extends Migration
             $table->string('escolaridade'); 
             $table->string('cep',12); 
             $table->string('endereco'); 
-            $table->string('numero_local',12); 
+            $table->string('numero'); 
+            $table->string('complemento');
             $table->string('cidade'); 
             $table->string('estado'); 
             $table->string('pais'); 
