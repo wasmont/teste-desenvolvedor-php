@@ -17,7 +17,7 @@ use App\Http\Controllers\AuthController as Autenticacao;
 
 
 Route::post('register-user', [Autenticacao::class, 'registerUser']);
-Route::post('login', [Autenticacao::class, 'login'])->middleware('auth:sanctum');
+Route::post('login', [Autenticacao::class, 'login']);
 Route::post('logout', [Autenticacao::class, 'logout'])->middleware('auth:sanctum');
 
 Route::group(['middleware'=>'auth:sanctum'], function(){
