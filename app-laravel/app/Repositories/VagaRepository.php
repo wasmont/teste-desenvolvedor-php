@@ -4,8 +4,7 @@ declare(strict_types=1);
 
 namespace App\Repositories;
 
-use App\Enums\PrioridadeEnum;
-use App\Enums\TipoContratacaoEnum;
+use App\Enums\{PrioridadeEnum, TipoContratacaoEnum};
 use App\Models\Vaga;
 use App\Interfaces\VagaRepositoryInterface;
 

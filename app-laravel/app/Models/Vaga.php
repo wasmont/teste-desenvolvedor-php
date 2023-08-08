@@ -2,8 +2,7 @@
 
 namespace App\Models;
 
-use App\Enums\TipoContratacaoEnum;
-use App\Enums\PrioridadeEnum;
+use App\Enums\{TipoContratacaoEnum, PrioridadeEnum};
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 

@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Interfaces\VagaRepositoryInterface;
 use App\Repositories\VagaRepository;
 use Illuminate\Support\ServiceProvider;
 
