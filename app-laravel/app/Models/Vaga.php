@@ -10,9 +10,35 @@ use Illuminate\Database\Eloquent\Model;
 class Vaga extends Model
 {
     use HasFactory;
-
-    //protected $fillable = ['id','titulo'];
-
+    protected $table = 'vaga';
+    public $timestamps = true;
+    //protected $hidden = ['created_at','updated_at'];
+    protected $fillable = [ 
+                            'id',
+                            'titulo',
+                            'empresa',
+                            'detalhes',
+                            'requisitos',
+                            'escolaridade',
+                            'cep',
+                            'endereco',
+                            'numero',
+                            'complemento',
+                            'cidade',
+                            'estado',
+                            'pais',
+                            'salario',
+                            'beneficios',
+                            'tipo_contratacao',
+                            'horario_trabalho',
+                            'prioridade',
+                            'observacoes',
+                            'pausar',
+                            'ativo',
+                            'created_at',
+                            'updated_at'
+                        ];
+    
     /**
      * Write code on Method
      *

@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Repositories\VagaRepository;
 use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider
@@ -11,7 +12,7 @@ class RepositoryServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //$this->app->bind(TesteRepositoryInterface::class, TesteRepository::class);
+        $this->app->bind(VagaRepositoryInterface::class, VagaRepository::class);
     }
 
     /**

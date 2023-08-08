@@ -32,7 +32,7 @@ return new class extends Migration
             $table->string('prioridade',20); 
             $table->text('observacoes'); 
             $table->boolean('pausar'); 
-            $table->boolean('ativo'); 
+            $table->boolean('ativo')->default(true); 
             $table->timestamps();
             $table->engine = 'InnoDB';
             $table->collation = 'utf8mb4_unicode_ci';
